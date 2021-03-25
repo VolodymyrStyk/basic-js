@@ -6,7 +6,7 @@ module.exports = function createDreamTeam(members) {
       member = member.replace(/\s+/g, "");
       title.push(member[0].toUpperCase());
     } else {
-      return;
+      member = "";
     }
   }
   newTitle = title.sort().join("");
