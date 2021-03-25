@@ -4,7 +4,7 @@ const MODERN_ACTIVITY = 15;
 const HALF_LIFE_PERIOD = 5730;
 
 module.exports = function dateSample(sampleActivity) {
-  let sample = Math.ceil(Number(sampleActivity));
+  let sample = parseFloat(sampleActivity);
   if (isNaN(sample)) {
     return false;
   }
